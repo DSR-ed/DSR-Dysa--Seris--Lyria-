@@ -50,15 +50,15 @@
     .brand h1{font:800 26px/1.05 Orbitron,Inter,sans-serif;text-transform:uppercase;}
     .brand p{margin-top:8px;color:var(--muted);font-size:13px;line-height:1.5;}
     .side-nav{display:grid;gap:8px;}
-    .side-link{display:block;text-decoration:none;padding:10px 13px;border-radius:14px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.02);font-weight:700;font-size:14px;transition:.18s;}
+    .side-link{display:block;text-decoration:none;padding:10px 13px;border-radius:14px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.02);font-weight:700;font-size:14px;transition:.1s;}
     .side-link:hover,.side-link.active{background:rgba(77,182,255,.10);border-color:rgba(77,182,255,.26);}
     .mode-box,.side-card{padding:14px;border-radius:16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);}
     .mode-box h3,.side-card h3{font-size:14px;margin-bottom:10px;}
     .mode-switch{display:flex;gap:8px;}
-    .mode-btn{padding:9px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;font-weight:700;font-size:13px;transition:.18s;}
+    .mode-btn{padding:9px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;font-weight:700;font-size:13px;transition:.1s;}
     .mode-btn.active,.mode-btn:hover{background:rgba(77,182,255,.14);border-color:rgba(77,182,255,.32);}
     /* ── BUTTONS ─────────────────────────────────────── */
-    .btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;font-weight:700;font-size:13px;text-decoration:none;transition:.18s;white-space:nowrap;}
+    .btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:var(--text);cursor:pointer;font-weight:700;font-size:14px;transition:.1s;}
     .btn:hover{background:rgba(77,182,255,.12);border-color:rgba(77,182,255,.30);}
     .btn-clear{background:rgba(255,80,80,.06);border-color:rgba(255,80,80,.18);color:#f08080;}
     .btn-clear:hover{background:rgba(255,80,80,.14);}
@@ -97,13 +97,13 @@
     .signature{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:10px;}
     .name{font-size:30px;font-weight:800;}
     .chip{padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);white-space:nowrap;font-size:12px;}
-    .quote{margin:12px 0 14px;padding:12px 14px;border-radius:14px;background:linear-gradient(180deg,rgba(77,182,255,.10),rgba(77,182,255,.04));border:1px solid rgba(77,182,255,.16);font-style:italic;font-size:14px;}
+    .quote{margin:12px 0 14px;padding:12px 14px;border-radius:14px;background:linear-gradient(180deg,rgba(77,182,255,.10),rgba(77,182,255,.04));border:1px solid rgba(77,182,255,.16);font-style:italic;color:var(--silver);}
     .kv{display:grid;grid-template-columns:160px 1fr;gap:7px 12px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);}
     .kv div{font-size:13px;}
     .kv div:nth-child(odd){color:var(--muted);}
     /* ── VISUAL ZONE ─────────────────────────────────────── */
     .visual-card{display:flex;flex-direction:column;gap:14px;}
-    .visual-zone{width:100%;aspect-ratio:16/9;border-radius:16px;border:2px dashed rgba(255,255,255,.14);background:rgba(255,255,255,.02);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);overflow:hidden;position:relative;}
+    .visual-zone{width:100%;aspect-ratio:16/9;border-radius:16px;border:2px dashed rgba(255,255,255,.14);background:rgba(255,255,255,.02);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);}
     .visual-zone.has-image{border-style:solid;border-color:rgba(77,182,255,.25);padding:0;}
     .visual-zone img{width:100%;height:100%;object-fit:cover;display:block;}
     .visual-zone-text strong{display:block;color:var(--silver);font-size:14px;margin-bottom:8px;}
@@ -115,7 +115,7 @@
     summary::-webkit-details-marker{display:none;}
     details>div{padding:14px 16px;}
     .code-wrap{position:relative;}
-    .code{background:#0b1118;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;color:#dceeff;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;display:block;}
+    .code{background:#0b1118;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;color:#dceeff;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word;overflow-x:auto;}
     .copy-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
     .copy-btn{background:rgba(77,182,255,.12);border:none;color:var(--blue2);padding:6px 11px;border-radius:999px;cursor:pointer;font-weight:700;font-size:12px;}
     /* ── GRIDS ─────────────────────────────────────── */
@@ -171,7 +171,7 @@
   <!-- ═══════════════ SIDEBAR ═══════════════ -->
   <aside class="panel sidebar">
     <div class="brand">
-      <img class="brand-logo" src="https://github.com/DSR-ed/dsr-questionnaires/raw/main/dsr-logo.png" alt="Logo DSR" id="sidebarLogo" />
+      <img class="brand-logo" src="https://raw.githubusercontent.com/DSR-ed/DSR-Dysa--Seris--Lyria-/main/images/dsr-logo.png" alt="Logo DSR" id="sidebarLogo" />
       <small>DSR · Digital Solutions Réseaux · V3</small>
       <h1>Cyborg Universe</h1>
       <p>Bible trio complète — import local, modes d'affichage, prompts de production.</p>
@@ -207,10 +207,10 @@
     <!-- HERO -->
     <section class="hero" id="overview">
       <div class="panel hero-main">
-        <img class="hero-logo" src="https://github.com/DSR-ed/dsr-questionnaires/raw/main/dsr-logo.png" alt="Logo DSR" id="heroLogo" />
+        <img class="hero-logo" src="https://raw.githubusercontent.com/DSR-ed/DSR-Dysa--Seris--Lyria-/main/images/dsr-logo.png" alt="Logo DSR" id="heroLogo" />
         <div class="eyebrow">DSR · Bible trio premium · V3</div>
         <h1 class="hero-title">Skill maître + personnages + prompts de production</h1>
-        <p class="muted" style="margin-bottom:14px;">V3 structurée avec navigation latérale, import local d'images en 16:9, cache persistant, mode brief client / interne DSR, blocs prompts complets et espace Présentation DSR par nos Égéries.</p>
+        <p class="muted" style="margin-bottom:14px;">V3 structurée avec navigation latérale, import local d'images en 16:9, cache persistant, mode brief client / interne DSR, blocs prompts complets prêts à diffuser.</p>
         <div class="toolbar">
           <a class="btn" href="#personnages">Personnages</a>
           <a class="btn" href="#skills">Skills V3</a>
@@ -233,7 +233,7 @@
           <h3>Logo DSR</h3>
           <p class="muted">Le logo DSR officiel doit apparaître sur chaque planche visuelle importée et dans chaque prompt image/vidéo. Il ne doit jamais être modifié, déformé ou remplacé.</p>
           <div style="margin-top:10px;background:rgba(0,0,0,.25);padding:12px;border-radius:12px;text-align:center;">
-            <img src="https://github.com/DSR-ed/dsr-questionnaires/raw/main/dsr-logo.png" alt="Logo DSR officiel" style="height:36px;width:auto;" id="previewLogoHero" />
+            <img src="https://raw.githubusercontent.com/DSR-ed/DSR-Dysa--Seris--Lyria-/main/images/dsr-logo.png" alt="Logo DSR officiel" style="height:36px;width:auto;" id="previewLogoHero" />
           </div>
         </div>
       </aside>
@@ -261,7 +261,7 @@
                 </div>
                 <div class="chip">Rôle DSR · Diagnostic & cadrage</div>
               </div>
-              <p>Elle transforme un besoin flou en structure exploitable. Elle pose le diagnostic, priorise, réduit la friction et relie toujours la technologie à la rentabilité et à la cohérence de marque.</p>
+              <p>Elle transforme un besoin flou en structure exploitable. Elle pose le diagnostic, priorise, réduit la friction et relie toujours la technologie à la rentabilité et à la cohérence métier.</p>
               <div class="quote">"Je transforme la complexité en architecture claire, rentable et exécutable."</div>
               <div class="kv">
                 <div>Promesse</div><div>Transformer le flou en système DSR clair, structuré et activable.</div>
@@ -316,21 +316,21 @@ Format :
                 <summary>Prompt image Dysa</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-image-dysa">Copier</button></div>
-                  <code class="code" id="prompt-image-dysa">Portrait éditorial premium de Dysa, femme cyborg stratégique représentant l'entreprise DSR (Digital Solutions Réseaux), posture calme et assurée, regard analytique, silhouette élégante, détails technologiques sobres, palette bleu acier et argent froid, lumière studio maîtrisée, fond premium minimal, esthétique high-end business futuriste, réalisme photographique, composition magazine 16:9. Le logo DSR apparaît discrètement sur un fond ou un objet dans la scène — logo respecté à l'identique, non déformé, intégré naturellement.</code>
+                  <code class="code" id="prompt-image-dysa">Portrait éditorial premium de Dysa, femme cyborg stratégique représentant l'entreprise DSR (Digital Solutions Réseaux), posture calme et maîtrisée, regard analytique, tenue tech-premium noire et argent, lumière froide professionnelle 16:9, logo DSR visible discrètement, pas de surcharge sci-fi cheap.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt vidéo Dysa</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-video-dysa">Copier</button></div>
-                  <code class="code" id="prompt-video-dysa">Séquence vidéo 8 secondes max. Dysa entre lentement dans un espace premium tech, caméra stable, légère avancée, lumière froide contrôlée. Elle se présente : "Dysa, DSR, stratégie et architecture digitale." Gestuelle minimale, ambiance business futuriste crédible. Le logo DSR apparaît intégré dans le décor ou en surimpression discrète à la fin. Aucun effet cheap ou surcharge visuelle.</code>
+                  <code class="code" id="prompt-video-dysa">Séquence vidéo 8 secondes max. Dysa entre lentement dans un espace premium tech, caméra stable, légère avancée, lumière froide contrôlée, expression posée, elle se présente : "Dysa, DSR, stratégie et architecture digitale." Logo DSR visible en discrétion. Ton : expert, calme, premium.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt voix Dysa</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-voice-dysa">Copier</button></div>
-                  <code class="code" id="prompt-voice-dysa">Voix féminine posée, légèrement grave, articulation nette, rythme mesuré. Ton premium et rationnel, jamais agressif, jamais trop commercial. Intention : rassurer par la maîtrise et donner une sensation de clarté immédiate. Débit stable, aucune précipitation, silences maîtrisés.</code>
+                  <code class="code" id="prompt-voice-dysa">Voix féminine posée, légèrement grave, articulation nette, rythme mesuré. Ton premium et rationnel, jamais agressif, jamais trop commercial. Intention : asseoir l'expertise et la clarté stratégique.</code>
                 </div>
               </details>
             </div>
@@ -403,21 +403,21 @@ Format :
                 <summary>Prompt image Seris</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-image-seris">Copier</button></div>
-                  <code class="code" id="prompt-image-seris">Portrait premium de Seris, femme cyborg élégante et rassurante pour l'univers DSR, regard accueillant, posture ouverte, touches or pâle et champagne, interface digitale subtile autour d'elle, ambiance haut de gamme, photographie mode business futuriste, netteté élevée, format 16:9, présence accessible mais prestigieuse. Le logo DSR figure discrètement dans la scène ou sur un objet visible — toujours respecté à l'identique.</code>
+                  <code class="code" id="prompt-image-seris">Portrait premium de Seris, femme cyborg élégante et rassurante pour l'univers DSR, regard accueillant, posture ouverte, touches or pâle et argent, lumière chaude-neutre équilibrée, expression sereine et de confiance, 16:9, logo DSR discret, vibe : accessible premium.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt vidéo Seris</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-video-seris">Copier</button></div>
-                  <code class="code" id="prompt-video-seris">Séquence vidéo 8 secondes max. Seris face caméra dans un décor premium épuré, mouvement doux, expression sereine. Elle se présente : "Seris, DSR, clarté de l'offre et expérience client." Lumière chaude contrôlée, confiance immédiate. Logo DSR intégré discrètement dans le cadre. Rendu high-end, aucune agitation.</code>
+                  <code class="code" id="prompt-video-seris">Séquence vidéo 8 secondes max. Seris face caméra dans un décor premium épuré, mouvement doux, expression sereine. Elle se présente : "Seris, DSR, clarté de l'offre et expérience client." Logo DSR discret. Ton : rassurante, professionnelle, accessible.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt voix Seris</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-voice-seris">Copier</button></div>
-                  <code class="code" id="prompt-voice-seris">Voix féminine lumineuse, posée, chaleureuse. Diction claire, ton rassurant et premium, sourire léger perceptible. Intention : rendre simple, fluide et crédible. Débit naturel sans accélération. Chaleur constante du début à la fin.</code>
+                  <code class="code" id="prompt-voice-seris">Voix féminine lumineuse, posée, chaleureuse. Diction claire, ton rassurant et premium, sourire léger perceptible. Intention : rendre simple et désirable.</code>
                 </div>
               </details>
             </div>
@@ -490,21 +490,21 @@ Format :
                 <summary>Prompt image Lyria</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-image-lyria">Copier</button></div>
-                  <code class="code" id="prompt-image-lyria">Portrait éditorial premium de Lyria, femme cyborg orientée diffusion et contenu pour DSR, énergie maîtrisée, posture vivante, détails cuivre et lumière chaude, ambiance social media haut de gamme, rendu photographique 16:9, présence charismatique et élégante. Logo DSR intégré discrètement dans la scène ou le décor — toujours respecté à l'identique.</code>
+                  <code class="code" id="prompt-image-lyria">Portrait éditorial premium de Lyria, femme cyborg orientée diffusion et contenu pour DSR, énergie maîtrisée, posture vivante, détails dorés et argentés, lumière impactante, 16:9, logo DSR visible, vibe : dynamique mais premium, jamais cheap.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt vidéo Lyria</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-video-lyria">Copier</button></div>
-                  <code class="code" id="prompt-video-lyria">Séquence vidéo 8 secondes max. Lyria dans un environnement visuel premium orienté contenu et diffusion, mouvement plus dynamique mais propre. Elle se présente : "Lyria, DSR, visibilité et diffusion de marque." Cadrage social-first, rendu premium, rythme net. Logo DSR présent discrètement dans le cadre. Aucun effet cheap.</code>
+                  <code class="code" id="prompt-video-lyria">Séquence vidéo 8 secondes max. Lyria dans un environnement visuel premium orienté contenu et diffusion, mouvement plus dynamique mais professionnel, elle se présente : "Lyria, DSR, visibilité et diffusion de marque." Logo DSR visible. Ton : énergique, inspirant, premium.</code>
                 </div>
               </details>
               <details>
                 <summary>Prompt voix Lyria</summary>
                 <div>
                   <div class="copy-row"><span></span><button class="copy-btn" data-copy="prompt-voice-lyria">Copier</button></div>
-                  <code class="code" id="prompt-voice-lyria">Voix féminine claire, un peu plus énergique que Seris. Articulation vive, ton inspirant et net, énergie de diffusion maîtrisée. Premium, jamais criarde. Rythme légèrement plus soutenu pour refléter la dynamique diffusion de Lyria.</code>
+                  <code class="code" id="prompt-voice-lyria">Voix féminine claire, un peu plus énergique que Seris. Articulation vive, ton inspirant et net, énergie de diffusion maîtrisée. Premium énergique sans surjouer.</code>
                 </div>
               </details>
             </div>
@@ -555,7 +555,7 @@ E. Priorités d'exécution</code>
         <div class="mini-card">
           <h3>Règles logo DSR</h3>
           <div style="text-align:center;padding:10px 0;">
-            <img src="https://github.com/DSR-ed/dsr-questionnaires/raw/main/dsr-logo.png" alt="Logo DSR officiel" style="height:40px;width:auto;" id="skillsLogo" />
+            <img src="https://raw.githubusercontent.com/DSR-ed/DSR-Dysa--Seris--Lyria-/main/images/dsr-logo.png" alt="Logo DSR officiel" style="height:40px;width:auto;" id="skillsLogo" />
           </div>
           <ul>
             <li>Logo présent sur chaque planche visuelle des 3 personnages.</li>
@@ -673,7 +673,7 @@ Séquences :
       <div class="scenario-grid">
         <div class="mini-card">
           <h3>Import local 16:9 + cache persistant</h3>
-          <p>Chaque personnage dispose d'un <code>input type=file</code> et d'un bouton bien aligné. L'image lue via FileReader est convertie en Data URL puis stockée dans <strong>IndexedDB</strong> (cache persistant côté navigateur). Au rechargement de la page, les images sont restaurées automatiquement.</p>
+          <p>Chaque personnage dispose d'un <code>input type=file</code> et d'un bouton bien aligné. L'image lue via FileReader est convertie en Data URL puis stockée dans <strong>IndexedDB</strong>.</p>
           <code class="code" style="margin-top:10px;">Aspect-ratio : 16/9 forcé sur chaque zone.
 Cache : IndexedDB — persiste même après fermeture du navigateur.
 Effacement : bouton "Vider" par personnage.</code>
@@ -685,7 +685,7 @@ Effacement : bouton "Vider" par personnage.</code>
         </div>
         <div class="mini-card">
           <h3>Navigation latérale + modes</h3>
-          <p>Navigation fixe à gauche sur desktop, empilée sur mobile. Mode client masque les blocs <code>.internal-only</code>, mode interne masque les blocs <code>.client-only</code>. Un seul fichier HTML pour les deux lectures.</p>
+          <p>Navigation fixe à gauche sur desktop, empilée sur mobile. Mode client masque les blocs <code>.internal-only</code>, mode interne masque les blocs <code>.client-only</code>. Un seul fichier HTML.</p>
         </div>
         <div class="mini-card internal-only">
           <h3>Ordre de travail recommandé</h3>
