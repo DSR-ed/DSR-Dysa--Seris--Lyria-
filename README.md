@@ -1,7 +1,4 @@
-# DSR-Dysa--Seris--Lyria-
-
-
-# DSR Dysa · Seris · Lyria — V4
+# DSR Dysa · Seris · Lyria — V5
 
 Univers créatif DSR autour des trois égéries **Dysa**, **Seris** et **Lyria**.
 
