@@ -2,7 +2,7 @@
 
 Univers créatif DSR autour des trois égéries **Dysa**, **Seris** et **Lyria**.
 
-Cette version V4 sert de base de production pour :
+Cette version V5 sert de base de production pour :
 - la consultation HTML locale,
 - l’import des planches visuelles officielles,
 - la persistance mémoire cache des images,
@@ -13,7 +13,7 @@ Cette version V4 sert de base de production pour :
 
 ## Contenu du repo
 
-- `dsr-cyborg-personas-v4.html` : version principale V4.
+- `dsr-cyborg-personas-v5.html` : version principale V5.
 - `Dysa.jpeg` : référence visuelle Dysa.
 - `Seris.jpeg` : référence visuelle Seris.
 - `Lyria.jpeg` : référence visuelle Lyria.
@@ -48,7 +48,7 @@ Règle absolue :
 - toujours le respecter à l’identique.
 
 ### 4. Prompts réseaux sociaux
-La V4 contient des prompts détaillés pour :
+La V5 contient des prompts détaillés pour :
 - Facebook,
 - Instagram,
 - LinkedIn,
@@ -58,7 +58,7 @@ La V4 contient des prompts détaillés pour :
 - publications et légendes.
 
 ### 5. Vidéo DSR séquencée
-La V4 inclut un script vidéo complet en plans de 8 secondes maximum :
+La V5 inclut un script vidéo complet en plans de 8 secondes maximum :
 1. ouverture DSR,
 2. Dysa,
 3. Seris,
@@ -68,7 +68,7 @@ La V4 inclut un script vidéo complet en plans de 8 secondes maximum :
 
 ## Utilisation
 
-1. Ouvrir le fichier HTML V4 dans un navigateur.
+1. Ouvrir le fichier HTML V5 dans un navigateur.
 2. Importer les planches visuelles souhaitées.
 3. Vérifier la cohérence des prompts.
 4. Utiliser les blocs de copie pour générer les visuels, publications ou séquences vidéo.
