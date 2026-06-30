@@ -1,98 +1,41 @@
-# DSR Dysa · Seris · Lyria — V5
+# DSR — Dysia · Sérys · Rylia (V6)
 
-Univers créatif DSR autour des trois égéries **Dysa**, **Seris** et **Lyria**.
+Univers des trois **égéries de DSR** (Digital Solutions Réseaux) et de leur orchestration par le super-agent **Hermes**.
 
-Cette version V5 sert de base de production pour :
-- la consultation HTML locale,
-- l’import des planches visuelles officielles,
-- la persistance mémoire cache des images,
-- les prompts ultra détaillés Facebook / Instagram / LinkedIn,
-- les attitudes solo / duo / trio,
-- le script vidéo DSR en séquences de 8 secondes,
-- la cohérence visuelle autour du logo officiel DSR.
+Les égéries sont à la fois une **identité de marque** (personas) et des **agents IA** : elles incarnent les trois forces de l'agence et servent à produire les livrables DSR (site, réseaux, vidéo, automatisations).
 
-## Contenu du repo
+## Les trois égéries
 
-- `dsr-cyborg-personas-v5.html` : version principale V5.
-- `Dysa.jpeg` : référence visuelle Dysa.
-- `Seris.jpeg` : référence visuelle Seris.
-- `Lyria.jpeg` : référence visuelle Lyria.
-- `dsr-logo (1).png` : logo officiel DSR à intégrer sans modification.
+| | **Dysia** (D) | **Sérys** (S) | **Rylia** (R) |
+|---|---|---|---|
+| **Pôle** | Stratégie & Conseil | Création & Expérience | Automatisation & Diffusion |
+| **Rôle** | Cadre, audite, architecture | Crée sites, branding, textes, UX | Automatise, déploie, diffuse |
+| **Moment** | Amont | Milieu | Aval |
+| **Visuel** | Cheveux bruns, palette bleu acier | Cheveux platine, palette champagne | Cheveux cuivrés, palette cuivre |
 
-## Objectif
+**Ordre canonique :** Dysia cadre → Sérys crée → Rylia exécute & diffuse. **Hermes** coordonne et garde la mémoire ; **Édouard** décide.
 
-Construire une base premium et cohérente pour représenter DSR à travers ses égéries :
-- **Dysa** : stratégie, cadrage, architecture digitale.
-- **Seris** : clarté d’offre, compréhension, expérience client.
-- **Lyria** : visibilité, diffusion, présence de marque.
+> **Acronyme D-S-R.** Les noms d'origine étaient Dysa · Seris · **Lyria** — « Lyria » commençait par L et cassait l'acronyme. Le passage à **Rylia** (R) le corrige ; Dysa→Dysia et Seris→Sérys harmonisent l'ensemble.
 
-## Fonctions principales
+## Contenu du dépôt
 
-### 1. Import local des visuels
-Chaque personnage dispose d’une zone d’import locale au format 16:9.
-
-### 2. Mémoire cache persistante
-Les images importées sont conservées localement via **IndexedDB**.
-Cela permet de retrouver les planches au rechargement de la page sans devoir les réimporter à chaque fois.
-
-### 3. Logo officiel DSR
-Le logo DSR est prévu :
-- dans l’interface HTML,
-- dans les règles de prompts image,
-- dans les règles de prompts vidéo.
-
-Règle absolue :
-- ne jamais déformer le logo,
-- ne jamais le recoloriser,
-- ne jamais le remplacer,
-- toujours le respecter à l’identique.
-
-### 4. Prompts réseaux sociaux
-La V5 contient des prompts détaillés pour :
-- Facebook,
-- Instagram,
-- LinkedIn,
-- visuels solo,
-- visuels duo,
-- visuels trio,
-- publications et légendes.
-
-### 5. Vidéo DSR séquencée
-La V5 inclut un script vidéo complet en plans de 8 secondes maximum :
-1. ouverture DSR,
-2. Dysa,
-3. Seris,
-4. Lyria,
-5. duo de complémentarité,
-6. trio final ou signature logo.
+- **`index.html`** — interface V6 « Cyborg Universe » : personnages, prompts réseaux (FB/Insta/LinkedIn), attitudes solo/duo/trio, script vidéo 8 s, et l'onglet **« Interactions & Hermes »**. Cache image local via IndexedDB.
+- **`images/`** — références visuelles officielles : `Dysia.jpeg`, `Serys.jpeg`, `Rylia.jpeg`, et le logo `dsr-logo.png`.
+- **`personas/`** — **source de vérité** des égéries pour Hermes : fiches détaillées (`.md`), configs machine (`.json`), modèle d'interactions, et première mission. Voir [`personas/README-personas.md`](personas/README-personas.md).
 
 ## Utilisation
 
-1. Ouvrir le fichier HTML V5 dans un navigateur.
-2. Importer les planches visuelles souhaitées.
-3. Vérifier la cohérence des prompts.
-4. Utiliser les blocs de copie pour générer les visuels, publications ou séquences vidéo.
-5. Exporter en PDF si nécessaire.
+- **Consulter / produire** : ouvrir `index.html` dans un navigateur (ou via GitHub Pages). Importer les planches, copier les blocs de prompts, exporter en PDF si besoin.
+- **Piloter le trio (Hermes)** : charger `personas/hermes.json` (orchestration) + `personas/dysia.json`, `serys.json`, `rylia.json` (agents). Détails et scénarios dans `personas/interactions-hermes.md`.
 
-## Positionnement
+## Règle logo DSR (absolue)
 
-Cette base est conçue pour un rendu :
-- premium,
-- crédible,
-- structuré,
-- réutilisable pour le site, les réseaux et la vidéo.
+Le logo officiel `images/dsr-logo.png` ne doit **jamais** être déformé, recolorisé, remplacé ou modifié — toujours intégré à l'identique, dans l'interface comme dans tous les prompts image et vidéo.
 
-## Notes de production
+## Continuité V5 → V6
 
-- garder DSR au centre,
-- utiliser les égéries comme prolongement de marque,
-- éviter toute surcharge futuriste ou effet cheap,
-- toujours viser une cohérence haut de gamme.
+La V6 conserve tout le travail V5 (identités visuelles, palettes, voix, attitudes, prompts, script vidéo) et ajoute : les **noms corrigés** (Dysia/Sérys/Rylia), des **rôles élargis** (Sérys = création complète ; Rylia = automatisation + diffusion), l'onglet **Interactions & Hermes**, et le dossier **`personas/`** prêt pour l'agent.
 
-## Suite logique
+---
 
-Évolutions possibles :
-- intégration d’un module de génération de variantes par réseau,
-- ajout de séquences vidéo supplémentaires,
-- ajout de prompts campagne multi-posts,
-- ajout de blocs CTA selon les offres DSR.
+*DSR Agency — agence web augmentée par l'IA pour TPE/PME. Garder DSR au centre : premium, concret, crédible.*
